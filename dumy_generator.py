@@ -18,12 +18,12 @@ def getRandomListString(maxCnt):
     
     resultStr = '['
     for val in result:
-        resultStr = '"%s",' % resultStr
-    resultStr = resultStr[:len(resultStr)-2] + ']'
+        resultStr = resultStr + '"%s",' % val
+    resultStr = resultStr[:len(resultStr)-1] + ']'
     return resultStr
 
 jsonList = []
-for i in range(10):
+for i in range(20):
     _id = i
     _title = '제목' + str(i)
     _content = ''
