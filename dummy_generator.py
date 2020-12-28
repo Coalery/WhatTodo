@@ -39,7 +39,7 @@ for i in range(20):
 
     _uploadTime = '2020%02d%02d%02d%02d%02d' % (_month, _day, _hour, _minute, _second)
 
-    jsonList.append('{"id":%d,"title":"%s","content":"%s","tags":%s,"uploadTime","%s"}' % (_id, _title, _content, _tags, _uploadTime))
+    jsonList.append('{"id":%d,"title":"%s","content":"%s","tags":%s,"uploadTime":"%s"}' % (_id, _title, _content, _tags, _uploadTime))
 
 for json in jsonList:
     print("'" + json + "',")
