@@ -37,7 +37,7 @@ for i in range(20):
     _minute = random.randint(0, 59)
     _second = random.randint(0, 59)
 
-    _uploadTime = '2020%02d%02d%02d%02d%02d' % (_month, _day, _hour, _minute, _second)
+    _uploadTime = '2020-%02d-%02d-%02d-%02d-%02d' % (_month, _day, _hour, _minute, _second)
 
     jsonList.append('{"id":%d,"title":"%s","content":"%s","tags":%s,"uploadTime":"%s"}' % (_id, _title, _content, _tags, _uploadTime))
 
