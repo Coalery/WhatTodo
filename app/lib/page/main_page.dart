@@ -19,7 +19,13 @@ class MainPage extends StatelessWidget {
             itemBuilder: (_, index) => TodoWidget(todo: TodoUnit.fromJsonString(Dummy.data[index])),
           ),
         )
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          // Dialog
+        },
+      ),
     );
   }
 }
