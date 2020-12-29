@@ -13,7 +13,6 @@ class ConditionalWidget extends StatelessWidget {
   })
   : assert(condition != null),
     assert(trueWidget != null),
-    assert(falseWidget != null),
     this._condition = condition,
     this._trueWidget = trueWidget,
     this._falseWidget = falseWidget ?? SizedBox(),
