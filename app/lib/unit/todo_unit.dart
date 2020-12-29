@@ -45,7 +45,7 @@ class TodoUnit {
 
     List<String> tags = List.from(json['tags']);
 
-    DateTime uploadTime = DateFormat('yyyyMMddHHmmss').parse(json['uploadTime']);
+    DateTime uploadTime = DateFormat('yyyy-MM-dd-HH-mm-ss').parse(json['uploadTime']);
 
     return TodoUnit(id: id, title: title, content: content, tags: tags, uploadTime: uploadTime);
   }
